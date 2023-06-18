@@ -62,10 +62,7 @@ const Table: React.FC<TableProps> = memo(function Table({
   const renderItem = useCallback(
     ({ item: { name, highestBid, last, percentChange }, index }) => (
       <Row
-        name={name}
-        highestBid={highestBid}
-        last={last}
-        percentChange={percentChange}
+        cellList={[name, highestBid, last, percentChange]}
         containerStyle={styles.rowContainer}
         cellStyle={[styles.cell, index % 2 === 0 && cellColor, cellText]}
       />
