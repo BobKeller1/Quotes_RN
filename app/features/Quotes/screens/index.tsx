@@ -29,7 +29,7 @@ const Quotes: React.FC = observer(() => {
 
   useEffect(() => {
     if (mountedRef.current) return;
-    store.fetchQuoteList().then(r => null);
+    store.fetchQuoteList().then(() => null);
     mountedRef.current = true;
   }, []);
 

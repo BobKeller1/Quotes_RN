@@ -12,7 +12,7 @@ const TabNavigator = () => {
   return (
     <NavigationContainer>
       <Tab.Navigator
-        screenOptions={({ route }) => ({
+        screenOptions={() => ({
           tabBarActiveTintColor: "#0070f3",
           tabBarInactiveTintColor: "gray",
         })}
